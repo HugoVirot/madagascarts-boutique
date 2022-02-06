@@ -58,7 +58,7 @@
 
                         <b>Nous sommes présents sur le marché de
                             Portes-lès-Valence, place de la mairie, tous les jeudis de 9h à midi.</b>
-                        <p><a href="#contact"><button class="btn btn-danger ">Nous contacter</button></a></p>
+                    <p><a href="#contact"><button class="btn btn-danger ">Nous contacter</button></a></p>
                     </p>
                 </div>
             </div>
@@ -83,29 +83,26 @@
 
 
 
-        <section class="container-fluid mt-5" id="gammes">
+        <section class="container-fluid p-5" id="gammes">
             <h2><i class="fas fa-tags me-2"></i>Nos gammes</h2>
 
             <div class="row p-lg-4">
                 <div class="col-md-6 text-center mt-3">
-                    <h4>Epices</h4>
-                    <img src="./images/epices1.jpg" class="m-3">
-                    <p><button class="btn btn-danger ">liste des produits</button></p>
+                    <h3>Epices</h3>
+                    <img src="./images/epices1.jpg" class="m-3 mx-auto">
+                </div>
+
+                <div class="col-md-6 text-center mt-3">
+                    <h3>Vannerie</h3>
+                    <img src="./images/vannerie.jpg" class="m-3 mx-auto">
                 </div>
                 <div class="col-md-6 text-center mt-3">
-                    <h4>Vannerie</h4>
-                    <img src="./images/vannerie.jpg" class="m-3">
-                    <p><button class="btn btn-danger ">liste des produits</button></p>
+                    <h3>Vêtements - bijoux - accessoires</h3>
+                    <img src="./images/bijoux-nacre.jpg" class="m-3 mx-auto">
                 </div>
                 <div class="col-md-6 text-center mt-3">
-                    <h4>Vêtements - bijoux - accessoires</h4>
-                    <img src="./images/bijoux-nacre.jpg" class="m-3">
-                    <p><button class="btn btn-danger ">liste des produits</button></p>
-                </div>
-                <div class="col-md-6 text-center mt-3">
-                    <h4>Jeux en bois</h4>
-                    <img src="./images/jeu_dominos.jpg" class="m-3">
-                    <p><button class="btn btn-danger ">liste des produits</button></p>
+                    <h3>Jeux en bois</h3>
+                    <img src="./images/jeu_dominos.jpg" class="m-3 mx-auto">
                 </div>
             </div>
         </section>
@@ -114,27 +111,109 @@
             <h2><i class="fas fa-star me-2"></i>Produits stars</h2>
             <div class="container">
                 <div class="row text-white mx-auto">
+
                     <div class="col-md-6 col-lg-4 stars m-4 mx-auto text-center" id="vanille">
                         <h3 class="mt-3">vanille en gousses</h3>
-                        <button class="btn btn-danger">plus d'infos</button>
+
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#modalVanille"
+                            class="btn btn-danger">plus d'infos</button>
+
+                        <!-- Modal Vanille-->
+                        <div class="modal fade text-dark" id="modalVanille" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="exampleModalLabel">Vanille en gousses</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body d-flex align-items-end" id="modalBodyVanille">
+                                        <p class="mt-5">Gousses de Vanille Bourbon de Madagascar, qualité Gourmet
+                                            Premium, en
+                                            provenance directe des meilleures plantations ou par l'intermédiaire de
+                                            partenaires.
+                                            La longueur des gousses va de 16 à 19 cm, avec un taux d’humidité supérieur
+                                            à 32% et un taux de vanilline de 1,8 à 2,4% environ.
+                                            Nos gousses de vanille sont parfumées, charnues et moelleuses.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger mx-auto"
+                                            data-bs-dismiss="modal">retour</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+
                     <div class="col-md-6 col-lg-4 stars m-4 mx-auto text-center" id="sac">
                         <h3 class="mt-3">sac en raphia et cuir</h3>
-                        <button class="btn btn-danger">plus d'infos</button>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#modalSac"
+                            class="btn btn-danger">plus d'infos</button>
+
+                        <!-- Modal Sac Raphia-->
+                        <div class="modal fade text-dark" id="modalSac" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="exampleModalLabel">sac en raphia et cuir</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body" id="modalBodySac">
+                                        <p class="mt-5">Pratique pour faire vos courses, ce sac est emblématique du
+                                            savoir-faire malgache
+                                            en matière de travail du raphia. Ses larges anses en cuir sont résistantes
+                                            et confortables. Un incontournable !
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger mx-auto"
+                                            data-bs-dismiss="modal">retour</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="col-md-6 col-lg-4 stars m-4 mx-auto text-center" id="set">
                         <h3 class="mt-3">set de table</h3>
-                        <button class="btn btn-danger ">plus d'infos</button>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#modalSet"
+                            class="btn btn-danger">plus d'infos</button>
+
+                        <!-- Modal Set de table-->
+                        <div class="modal fade text-dark" id="modalSet" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="exampleModalLabel">sac en raphia et cuir</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body" id="modalBodySet">
+                                        <p class="mt-5">
+                                            Ce set de table va égayer vos tables, avec ses couleurs vives. Durable et
+                                            résistant, il xiste en plusieurs couleurs.
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger mx-auto"
+                                            data-bs-dismiss="modal">retour</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="container-md mt-5 mb-5" id="contact">
+        <section class="container-fluid mt-5 p-5" id="contact">
             <div class="row">
-                <div class="col-md-6" id="landscape">
-                </div>
-                <div class="col-md-6 ps-4">
+                <div class="col-md-6 offset-md-3 ps-4 text-white text-center">
                     <h2><i class="fas fa-comments me-2"></i>Contact</h2>
                     <p>Besoin d'une info ou d'un prix ? N'hésitez pas et contactez-nous.</p>
                     <p>
